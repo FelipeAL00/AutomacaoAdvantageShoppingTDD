@@ -39,7 +39,7 @@ public class RegisterPage {
 	}
 
 	public static void capturar() {
-		String printArquivo = "prints" + Generator.dataHoraParaArquivo();
+		String printArquivo = "prints" + Generator.dataHoraParaArquivo() + ".png";
 
 		Printar.print(CriarElementsDriverSelectActions.getdriver(), printArquivo);
 
