@@ -1,4 +1,4 @@
-package br.com.advantageShopping.BDD.Util;
+package br.com.advantageShopping.Util;
 
 import java.io.File;
 
