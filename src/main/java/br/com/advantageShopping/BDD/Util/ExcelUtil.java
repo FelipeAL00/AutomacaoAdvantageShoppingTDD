@@ -20,13 +20,12 @@ public class ExcelUtil {
 
 	private static XSSFRow row;
 	
-	public static final String CAMINHO = "C:\\Users\\felipe.almeida\\Documents\\java-workspace\\advantageShopping/";
 	
 	public static void setExcelFile(String arquivo, String planilha) throws Exception {
 
 		try {
 
-			FileInputStream excelFile = new FileInputStream(CAMINHO + arquivo);
+			FileInputStream excelFile = new FileInputStream(arquivo);
 
 			excelWBook = new XSSFWorkbook(excelFile);
 
@@ -78,7 +77,7 @@ public class ExcelUtil {
 
 			}
 
-			FileOutputStream fileOut = new FileOutputStream(CAMINHO + arquivo);
+			FileOutputStream fileOut = new FileOutputStream(arquivo);
 
 			excelWBook.write(fileOut);
 

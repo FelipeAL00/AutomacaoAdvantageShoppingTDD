@@ -10,20 +10,15 @@ import br.com.advantageShopping.BDD.pageObjects.HomePage;
 import br.com.advantageShopping.BDD.pageObjects.RegisterPage;
 
 public class TesteCadastro {
-	
+
 	@Before
 	public void inicio() throws Exception {
 		CriarElementsDriverSelectActions.criandoDriver("https://www.advantageonlineshopping.com/");
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "cadastro");
 	}
-	
+
 	@Test
 	public void DeveCriarUsuario() throws Exception {
-		Thread.sleep(4000);
-		HomePage.clicar("menuUser");
-		Thread.sleep(4000);
-		HomePage.clicarXpath("/html/body/login-modal/div/div/div[3]/a[2]");
-
 		String[] elementName = { "usernameRegisterPage", "emailRegisterPage", "passwordRegisterPage",
 				"confirm_passwordRegisterPage", "first_nameRegisterPage", "last_nameRegisterPage",
 				"phone_numberRegisterPage",
@@ -32,6 +27,10 @@ public class TesteCadastro {
 				"postal_codeRegisterPage" };
 
 		for (int i = 0; i < ExcelUtil.getRowNum(); i++) {
+			Thread.sleep(4000);
+			HomePage.clicar("menuUser");
+			Thread.sleep(4000);
+			HomePage.clicarXpath("/html/body/login-modal/div/div/div[3]/a[2]");
 			for (int n = 0; n < elementName.length; n++) {
 
 				if (n != 7) {
@@ -45,20 +44,28 @@ public class TesteCadastro {
 				}
 			}
 			RegisterPage.concordar("//*[@id=\"formCover\"]/sec-view/div/input");
-			
+
 			RegisterPage.clicar("register_btnundefined");
-			
+
+			Thread.sleep(4000);
+
+			String url = CriarElementsDriverSelectActions.getlink();
+
+			if (url.equals("https://www.advantageonlineshopping.com/#/")) {
+				ExcelUtil.setCellData("Aprovado", i + 1, 12, "MassaDados.xlsx");
+				RegisterPage.capturar();
+			}else {
+				ExcelUtil.setCellData("Reprovado", i + 1, 12, "MassaDados.xlsx");
+			}
+
 			CriarElementsDriverSelectActions.limpar();
-			
-			Thread.sleep(2000);
+
 		}
 
 	}
-	
+
 	@After
 	public void finaliza() {
-		RegisterPage.capturar();
-		
 		CriarElementsDriverSelectActions.close();
 	}
 }
