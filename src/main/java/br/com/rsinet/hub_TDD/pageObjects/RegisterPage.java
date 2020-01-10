@@ -51,4 +51,26 @@ public class RegisterPage {
 
 	}
 
+	public static String capturaSenha(WebDriver driver, String name) {
+		element= driver.findElement(By.name(name));
+		
+		return element.getText().toString();
+	}
+
+	public static String capturaConfirmacaoSenha(WebDriver driver, String name) {
+		element= driver.findElement(By.name(name));
+		
+		return element.getText().toString();
+	}
+
+	public static boolean btnInvisible(WebDriver driver, String id) {
+		element = driver.findElement(By.id(id));
+		
+		if(element.isEnabled()) {
+			return true;
+		}
+		
+		return false;
+	}
+
 }

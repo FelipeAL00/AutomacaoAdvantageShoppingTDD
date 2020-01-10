@@ -14,7 +14,7 @@ public class HomePage {
 	private static JavascriptExecutor js;
 	public static void clicar(String id, WebDriver driver) {	
 		element = driver.findElement(By.id(id));
-		wait = new WebDriverWait(driver, 50);
+		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(id)));
 		element.click();
 	}
@@ -22,7 +22,7 @@ public class HomePage {
 	public static void clicarXpath(String xpath, WebDriver driver) {
 		
 		element =  driver.findElement(By.xpath(xpath));
-		wait = new WebDriverWait(driver, 50);
+		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		js = (JavascriptExecutor) driver;
 		
@@ -32,9 +32,10 @@ public class HomePage {
 	}
 
 	public static String capturarQuemTaLogado(WebDriver driver) throws InterruptedException {
-		wait = new WebDriverWait(driver, 50);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menuUserLink\"]/span")));
-		element = driver.findElement(By.xpath("//*[@id=\"menuUserLink\"]/span"));	
+		wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menuUserLink\"]/span")));	
+		element = driver.findElement(By.xpath("//*[@id=\"menuUserLink\"]/span"));
+		
 		if(element.isEnabled())
 			return element.getText().toString();
 	
