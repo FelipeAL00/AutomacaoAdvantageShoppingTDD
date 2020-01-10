@@ -36,16 +36,16 @@ public class TesteCadastroComSucesso {
 				"cityRegisterPage", "addressRegisterPage", "state_/_province_/_regionRegisterPage",
 				"postal_codeRegisterPage" };
 
-		for (int i = 0; i < ExcelUtil.getRowNum(); i++) {
+		for (int i = 1; i < ExcelUtil.getRowNum(); i++) {
 			HomePage.clicar("menuUser",driver);
 			HomePage.clicarXpath("/html/body/login-modal/div/div/div[3]/a[2]",driver);
 			for (int n = 0; n < elementName.length; n++) {
 				
 				if (n != 7) {
-					RegisterPage.enviarTextoName(ExcelUtil.getCellData(i + 1, n), elementName[n],driver);
+					RegisterPage.enviarTextoName(ExcelUtil.getCellData(i, n), elementName[n],driver);
 
 				} else {
-					RegisterPage.escolhendoOpcao(ExcelUtil.getCellData(i + 1, n), elementName[n],driver);
+					RegisterPage.escolhendoOpcao(ExcelUtil.getCellData(i, n), elementName[n],driver);
 				}
 			}
 			RegisterPage.concordar("//*[@id=\"formCover\"]/sec-view/div/input",driver);
@@ -54,10 +54,10 @@ public class TesteCadastroComSucesso {
 
 			String resultadoObtido = HomePage.capturarQuemTaLogado(driver);
 			
-			driver.navigate().refresh();
-			assertEquals(ExcelUtil.getCellData(i+1, 0), resultadoObtido);
+			assertEquals(ExcelUtil.getCellData(i, 0), resultadoObtido);
 			
-			RegisterPage.capturar(driver,"//*[@id=\"menuUserLink\"]/span");
+			RegisterPage.capturar(driver,"//*[@id=\"menuUserLink\"]/span","success");
+			driver.navigate().refresh();
 		}
 
 	}

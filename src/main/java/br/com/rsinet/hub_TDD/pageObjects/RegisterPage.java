@@ -15,10 +15,8 @@ public class RegisterPage {
 	private static WebElement element;
 	private static Select select;
 	private static WebDriverWait wait;
-
+	
 	public static void enviarTextoName(String texto, String name, WebDriver driver) {
-		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(name)));
 		
 		element = driver.findElement(By.name(name));
 		
@@ -26,37 +24,28 @@ public class RegisterPage {
 	}
 
 	public static void escolhendoOpcao(String text, String xpath, WebDriver driver) {
-		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
-		
 		element = driver.findElement(By.xpath(xpath));
 		select = new Select(element);
-
+		wait = new WebDriverWait(driver, 50);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		element.click();
 		select.selectByVisibleText(text);
 	}
 
 	public static void concordar(String xpath, WebDriver driver) {
-		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
-		
 		element = driver.findElement(By.xpath(xpath));
 		element.click();
 	}
 
 	public static void clicar(String id, WebDriver driver) {
-		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
 		
 		element = driver.findElement(By.id(id));
 
 		element.click();
 	}
 
-	public static void capturar(WebDriver driver, String xpath) throws InterruptedException {
-		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
-		String printArquivo = "prints\\captura_" + Generator.dataHoraParaArquivo() + ".png";
+	public static void capturar(WebDriver driver, String xpath, String local) throws InterruptedException {
+		String printArquivo = "prints\\"+local+"\\captura_" + Generator.dataHoraParaArquivo() + ".png";
 
 		Printar.print(driver, printArquivo);
 
