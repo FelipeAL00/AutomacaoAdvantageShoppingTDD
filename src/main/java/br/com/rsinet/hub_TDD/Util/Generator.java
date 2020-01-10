@@ -1,4 +1,4 @@
-package br.com.advantageShopping.Util;
+package br.com.rsinet.hub_TDD.Util;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;

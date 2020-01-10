@@ -10,8 +10,7 @@ import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.pageObjects.HomePage;
 import br.com.rsinet.hub_TDD.pageObjects.RegisterPage;
 
-public class TesteCadastro {
-
+public class TesteCadastroComFalha {
 	private WebDriver driver;
 
 	@Before
@@ -57,7 +56,7 @@ public class TesteCadastro {
 
 			if (url.equals("https://www.advantageonlineshopping.com/#/")) {
 				ExcelUtil.setCellData("Aprovado", i + 1, 12, "MassaDados.xlsx");
-				RegisterPage.capturar(driver);
+//				RegisterPage.capturar(driver);
 			}else {
 				ExcelUtil.setCellData("Reprovado", i + 1, 12, "MassaDados.xlsx");
 			}

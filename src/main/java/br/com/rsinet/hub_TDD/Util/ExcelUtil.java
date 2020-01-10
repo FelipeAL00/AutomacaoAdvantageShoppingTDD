@@ -1,4 +1,4 @@
-package br.com.advantageShopping.Util;
+package br.com.rsinet.hub_TDD.Util;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

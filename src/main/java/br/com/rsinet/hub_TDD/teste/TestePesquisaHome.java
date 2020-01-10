@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.pageObjects.HomePage;
-import br.com.rsinet.hub_TDD.pageObjects.SearchPage;
 
 public class TestePesquisaHome {
 	private WebDriver driver;
@@ -23,7 +22,7 @@ public class TestePesquisaHome {
 	public void deveBuscarUmNotebookPeloNome() throws Exception {
 		HomePage.clicar("laptopsImg", driver);
 		
-		SearchPage.clicar(ExcelUtil.getCellData(1, 0));
+//		SearchPage.clicar(ExcelUtil.getCellData(1, 0),driver);
 		
 		
 	}
