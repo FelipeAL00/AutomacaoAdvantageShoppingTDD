@@ -27,7 +27,7 @@ public class TesteCadastroComFalha {
 	}
 
 	@Test
-	public void DeveErrarSenha() throws Exception {
+	public void DeveErrarSenhaENaoCadastrar() throws Exception {
 		String[] elementName = { "usernameRegisterPage", "emailRegisterPage", "passwordRegisterPage",
 				"confirm_passwordRegisterPage", "first_nameRegisterPage", "last_nameRegisterPage",
 				"phone_numberRegisterPage",
