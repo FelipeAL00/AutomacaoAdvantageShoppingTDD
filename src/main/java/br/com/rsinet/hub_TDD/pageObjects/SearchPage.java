@@ -26,8 +26,9 @@ public class SearchPage {
 	public static void clicarPorMassaDados(String linkTexto, WebDriver driver) {
 		wait = new WebDriverWait(driver, 30);
 		element = driver.findElement(By.linkText(linkTexto));
-		wait.until(ExpectedConditions.visibilityOf(element));
 		
+		wait.until(ExpectedConditions.visibilityOf(element));
+
 		element.click();
 	}
 
@@ -37,5 +38,6 @@ public class SearchPage {
 		Printar.print(driver, printArquivo);
 		
 	}
+
 
 }
