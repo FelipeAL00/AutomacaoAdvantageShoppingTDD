@@ -3,15 +3,16 @@ package br.com.rsinet.hub_TDD.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import br.com.rsinet.hub_TDD.Util.Generator;
+import br.com.rsinet.hub_TDD.Util.Printar;
 
 public class SearchPage {
 
 	private static WebElement element;
 	private static WebDriverWait wait;
-	private static Actions actions;
 
 	public static void clicar(String id, WebDriver driver) {
 		wait = new WebDriverWait(driver, 30);
@@ -24,11 +25,17 @@ public class SearchPage {
 
 	public static void clicarPorMassaDados(String linkTexto, WebDriver driver) {
 		wait = new WebDriverWait(driver, 30);
-		element = driver.findElement(By.partialLinkText(linkTexto));
-		actions = new Actions(driver);
+		element = driver.findElement(By.linkText(linkTexto));
 		wait.until(ExpectedConditions.visibilityOf(element));
+		
+		element.click();
+	}
 
-		actions.moveToElement(element).click().perform();
+	public static void printar(String local, WebDriver driver) {
+		String printArquivo = "prints\\"+local+"\\captura_" + Generator.dataHoraParaArquivo() + ".png";
+
+		Printar.print(driver, printArquivo);
+		
 	}
 
 }
