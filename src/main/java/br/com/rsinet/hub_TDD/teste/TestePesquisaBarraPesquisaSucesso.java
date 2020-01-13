@@ -15,29 +15,30 @@ import br.com.rsinet.hub_TDD.Util.Constantes;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.pageObjects.SearchPage;
 
-public class TestePesquisaHomeComSucesso {
+public class TestePesquisaBarraPesquisaSucesso {
+	
 	private WebDriver driver;
 	@Before
 	public void inicio() throws Exception {
 		driver = new ChromeDriver();
 		driver.get(Constantes.URLHOME);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		ExcelUtil.setExcelFile("MassaDados.xlsx", "buscarHomeSucesso");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraSucesso");		
 	}
 	
 	@Test
-	public void deveBuscarUmSpeakerPeloNome() throws Exception {
-		SearchAction.executeHome(driver);
+	public void deveBuscarUmProdutoComSucesso() throws Exception {
+		SearchAction.execute(driver);
 		
-		assertEquals("https://www.advantageonlineshopping.com/#/product/20", driver.getCurrentUrl());
-		
+		assertEquals("https://www.advantageonlineshopping.com/#/product/29?viewAll=HP%20USB%203%20Button%20Optical%20Mouse", driver.getCurrentUrl());
+	
 		Thread.sleep(1000);
-		SearchPage.printar("buscaSuccess",driver);
+		SearchPage.printar("buscaSuccess", driver);
 	}
 	
 	@After
 	public void finaliza() {
-		driver.close();
+//		driver.close();
 	}
 }
