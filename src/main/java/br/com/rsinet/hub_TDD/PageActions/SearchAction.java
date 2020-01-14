@@ -1,29 +1,48 @@
-package br.com.rsinet.hub_TDD.PageActions;
+package br.com.rsinet.hub_TDD.pageActions;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
-import br.com.rsinet.hub_TDD.pageObjects.HomePage;
-import br.com.rsinet.hub_TDD.pageObjects.SearchPage;
+import br.com.rsinet.hub_TDD.pageFactory.SearchPage;
 
 public class SearchAction {
-	
-	
-	public static void execute(WebDriver driver) throws Exception {
-		SearchPage.clicar("menuSearch", driver);
+	private static WebDriverWait wait;
+	private static WebElement element;
+	private static Actions actions;
 
-		String produto =  ExcelUtil.getCellData(1, 0);
-		SearchPage.escrever("autoComplete", driver, produto);
+	public static void execute(WebDriver driver) throws Exception {
+		wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(SearchPage.lupaPesquisa));
+		SearchPage.lupaPesquisa.click();
+		actions = new Actions(driver);
 		
-		SearchPage.clicarPorMassaDados(produto, driver);
-		
+		String produto = ExcelUtil.getCellData(1, 0);
+
+		wait.until(ExpectedConditions.elementToBeClickable(SearchPage.barraPesquisa));
+		SearchPage.barraPesquisa.sendKeys(produto);
+		SearchPage.barraPesquisa.sendKeys(Keys.ENTER);
+
+		wait.until(ExpectedConditions.visibilityOf(SearchPage.fecharPesquisa));
+		actions.moveToElement(SearchPage.fecharPesquisa).click().perform();
+
+		clicarMassaDados(driver);
 	}
 
-	public static void executeHome(WebDriver driver) throws Exception {
+	public static void executeHome() throws Exception {
+
+	}
+
+	private static void clicarMassaDados(WebDriver driver) throws Exception {
+		element = driver.findElement(By.linkText(ExcelUtil.getCellData(1, 0)));
+		wait.until(ExpectedConditions.visibilityOf(element));
 		
-		HomePage.clicar("speakersImg", driver);
+		actions.click(element).perform();
 		
-		SearchPage.clicarPorMassaDados(ExcelUtil.getCellData(1, 0), driver);
-				
 	}
 }

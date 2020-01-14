@@ -9,11 +9,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
-import br.com.rsinet.hub_TDD.PageActions.RegisterAction;
 import br.com.rsinet.hub_TDD.Util.Constantes;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
-import br.com.rsinet.hub_TDD.pageObjects.RegisterPage;
+import br.com.rsinet.hub_TDD.Util.Printar;
+import br.com.rsinet.hub_TDD.pageActions.RegisterAction;
+import br.com.rsinet.hub_TDD.pageFactory.HomePage;
+import br.com.rsinet.hub_TDD.pageFactory.RegisterPage;
 
 public class TesteCadastroComFalha {
 	private WebDriver driver;
@@ -25,6 +28,8 @@ public class TesteCadastroComFalha {
 		driver.manage().window().maximize();
 		driver.get(Constantes.URLHOME);
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "cadastroFalha");
+		PageFactory.initElements(driver, HomePage.class);
+		PageFactory.initElements(driver, RegisterPage.class);
 	}
 
 	@Test
@@ -32,9 +37,9 @@ public class TesteCadastroComFalha {
 		
 			RegisterAction.execute(driver);
 			
-			assertFalse(RegisterPage.capturaSenha(driver, "passwordRegisterPage") == RegisterPage.capturaConfirmacaoSenha(driver, "confirm_passwordRegisterPage") && RegisterPage.btnInvisible(driver,"register_btnundefined" ));
+			assertFalse(RegisterAction.capturaSenha() == RegisterAction.capturaConfirmacaoSenha() && RegisterAction.btnInvisible());
 			
-			RegisterPage.capturar(driver,"//*[@id=\"menuUserLink\"]/span","error");		
+			Printar.print(driver,"error");		
 
 	}
 

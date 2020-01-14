@@ -9,11 +9,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
-import br.com.rsinet.hub_TDD.PageActions.SearchAction;
 import br.com.rsinet.hub_TDD.Util.Constantes;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
-import br.com.rsinet.hub_TDD.pageObjects.SearchPage;
+import br.com.rsinet.hub_TDD.Util.Printar;
+import br.com.rsinet.hub_TDD.pageActions.SearchAction;
+import br.com.rsinet.hub_TDD.pageFactory.SearchPage;
 
 public class TestePesquisaBarraPesquisaSucesso {
 	
@@ -24,22 +26,22 @@ public class TestePesquisaBarraPesquisaSucesso {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(Constantes.URLHOME);
-		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraSucesso");		
+		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraSucesso");	
+		PageFactory.initElements(driver, SearchPage.class);
 	}
 	
 	@Test
 	public void deveBuscarUmProdutoComSucesso() throws Exception {
 		SearchAction.execute(driver);
 		
-		assertEquals("https://www.advantageonlineshopping.com/#/product/29?viewAll=HP%20USB%203%20Button%20Optical%20Mouse", driver.getCurrentUrl());
+		assertEquals("https://www.advantageonlineshopping.com/#/product/29?viewAll=HP%20USB%203%20Button%20Optical%20Mouse", driver.getCurrentUrl());		
 	
-		
 		Thread.sleep(1000);
-		SearchPage.printar("buscaSuccess", driver);
+		Printar.print(driver,"buscaSuccess");
 	}
 	
 	@After
 	public void finaliza() {
-		driver.close();
+//		driver.close();
 	}
 }

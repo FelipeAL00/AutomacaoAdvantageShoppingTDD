@@ -10,10 +10,10 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import br.com.rsinet.hub_TDD.PageActions.SearchAction;
 import br.com.rsinet.hub_TDD.Util.Constantes;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
-import br.com.rsinet.hub_TDD.pageObjects.SearchPage;
+import br.com.rsinet.hub_TDD.Util.Printar;
+import br.com.rsinet.hub_TDD.pageActions.SearchAction;
 
 public class TestePesquisaHomeComSucesso {
 	private WebDriver driver;
@@ -28,12 +28,12 @@ public class TestePesquisaHomeComSucesso {
 	
 	@Test
 	public void deveBuscarUmSpeakerPeloNome() throws Exception {
-		SearchAction.executeHome(driver);
+		SearchAction.executeHome();
 		
 		assertEquals("https://www.advantageonlineshopping.com/#/product/20", driver.getCurrentUrl());
 		
 		Thread.sleep(1000);
-		SearchPage.printar("buscaSuccess",driver);
+		Printar.print(driver,"buscaSuccess");
 	}
 	
 	@After
