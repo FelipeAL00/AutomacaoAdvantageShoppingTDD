@@ -12,7 +12,10 @@ public class SearchPage {
 	@FindBy(how = How.ID, using = "autoComplete")
 	public static WebElement barraPesquisa;
 	
-	@FindBy(how = How.XPATH, using = "/html/body/header/nav/ul/li[4]/a/div/div[1]/div/div/div/img")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"search\"]/div/div")
 	public static WebElement fecharPesquisa;
+
+	@FindBy(how = How.XPATH, using = "//*[@id=\"searchPage\"]/div[3]/div/label/span")
+	public static WebElement componentText;
 
 }

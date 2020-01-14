@@ -9,11 +9,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import br.com.rsinet.hub_TDD.Util.Constantes;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.Util.Printar;
 import br.com.rsinet.hub_TDD.pageActions.SearchAction;
+import br.com.rsinet.hub_TDD.pageFactory.HomePage;
+import br.com.rsinet.hub_TDD.pageFactory.SearchPage;
 
 public class TestePesquisaHomeComSucesso {
 	private WebDriver driver;
@@ -24,15 +27,16 @@ public class TestePesquisaHomeComSucesso {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "buscarHomeSucesso");
+		PageFactory.initElements(driver, HomePage.class);
+		PageFactory.initElements(driver, SearchPage.class);
 	}
 	
 	@Test
 	public void deveBuscarUmSpeakerPeloNome() throws Exception {
-		SearchAction.executeHome();
+		SearchAction.executeHome(driver);
 		
 		assertEquals("https://www.advantageonlineshopping.com/#/product/20", driver.getCurrentUrl());
 		
-		Thread.sleep(1000);
 		Printar.print(driver,"buscaSuccess");
 	}
 	

@@ -35,13 +35,12 @@ public class TestePesquisaBarraPesquisaSucesso {
 		SearchAction.execute(driver);
 		
 		assertEquals("https://www.advantageonlineshopping.com/#/product/29?viewAll=HP%20USB%203%20Button%20Optical%20Mouse", driver.getCurrentUrl());		
-	
-		Thread.sleep(1000);
+
 		Printar.print(driver,"buscaSuccess");
 	}
 	
 	@After
 	public void finaliza() {
-//		driver.close();
+		driver.close();
 	}
 }
