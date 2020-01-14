@@ -21,9 +21,9 @@ public class TestePesquisaBarraPesquisaSucesso {
 	@Before
 	public void inicio() throws Exception {
 		driver = new ChromeDriver();
-		driver.get(Constantes.URLHOME);
-		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(Constantes.URLHOME);
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraSucesso");		
 	}
 	
@@ -33,12 +33,13 @@ public class TestePesquisaBarraPesquisaSucesso {
 		
 		assertEquals("https://www.advantageonlineshopping.com/#/product/29?viewAll=HP%20USB%203%20Button%20Optical%20Mouse", driver.getCurrentUrl());
 	
+		
 		Thread.sleep(1000);
 		SearchPage.printar("buscaSuccess", driver);
 	}
 	
 	@After
 	public void finaliza() {
-//		driver.close();
+		driver.close();
 	}
 }

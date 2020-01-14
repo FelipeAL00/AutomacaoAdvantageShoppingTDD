@@ -19,7 +19,7 @@ public class SearchPage {
 		wait = new WebDriverWait(driver, 30);
 		element = driver.findElement(By.id(id));
 
-		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 
 		element.click();
 	}
@@ -47,6 +47,7 @@ public class SearchPage {
 	public static void clicarPorXpath(String xpath, WebDriver driver) {
 		element = driver.findElement(By.xpath(xpath));
 		wait = new WebDriverWait(driver, 30);
+		
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		
 		element.click();
