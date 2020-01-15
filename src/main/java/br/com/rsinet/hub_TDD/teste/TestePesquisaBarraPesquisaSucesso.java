@@ -17,7 +17,9 @@ import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.Util.Generator;
 import br.com.rsinet.hub_TDD.Util.Log;
 import br.com.rsinet.hub_TDD.Util.Printar;
+import br.com.rsinet.hub_TDD.pageActions.ProductAction;
 import br.com.rsinet.hub_TDD.pageActions.SearchAction;
+import br.com.rsinet.hub_TDD.pageFactory.ProductPage;
 import br.com.rsinet.hub_TDD.pageFactory.SearchPage;
 
 public class TestePesquisaBarraPesquisaSucesso {
@@ -31,16 +33,18 @@ public class TestePesquisaBarraPesquisaSucesso {
 		driver.get(Constantes.URLHOME);
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraSucesso");	
 		PageFactory.initElements(driver, SearchPage.class);
+		PageFactory.initElements(driver, ProductPage.class);
 		DOMConfigurator.configure("log4j.xml");
 		Log.startTestCase("SeleniumTesteBuscaSucesso" + Generator.dataHoraParaArquivo());
-		
 	}
 	
 	@Test
 	public void deveBuscarUmProdutoComSucesso() throws Exception {
 		SearchAction.execute(driver);
-		Log.info("teste executado");
-		assertEquals("https://www.advantageonlineshopping.com/#/product/29?viewAll=HP%20USB%203%20Button%20Optical%20Mouse", driver.getCurrentUrl());		
+		Log.info("teste de pesquisa executado");
+		ProductAction.execute(driver);
+		Log.info("teste de pagamento executado");
+		assertEquals("https://www.advantageonlineshopping.com/#/orderPayment", driver.getCurrentUrl());		
 		Log.info("teste passou");
 		Printar.print(driver,"buscaSuccess");
 		Log.info("Print feito");

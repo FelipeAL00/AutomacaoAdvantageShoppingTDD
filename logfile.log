@@ -14,3 +14,345 @@
 2020-01-15 11:28:52,679 INFO  [Log] X 
 2020-01-15 11:28:52,679 INFO  [Log] X 
 2020-01-15 11:28:52,679 INFO  [Log] X 
+2020-01-15 12:35:42,382 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:35:42,383 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:35:42,383 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteCadastroComFalha20200115123542     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 12:35:42,383 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:35:42,383 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:35:42,578 INFO  [Log] clicou no btnLogar 
+2020-01-15 12:35:43,153 INFO  [Log] clicou no btnCriarConta 
+2020-01-15 12:35:43,529 INFO  [Log] escreveu o element na posição 0 
+2020-01-15 12:35:43,915 INFO  [Log] escreveu o element na posição 1 
+2020-01-15 12:35:44,046 INFO  [Log] escreveu o element na posição 2 
+2020-01-15 12:35:44,199 INFO  [Log] escreveu o element na posição 3 
+2020-01-15 12:35:44,340 INFO  [Log] escreveu o element na posição 4 
+2020-01-15 12:35:44,454 INFO  [Log] escreveu o element na posição 5 
+2020-01-15 12:35:44,589 INFO  [Log] escreveu o element na posição 6 
+2020-01-15 12:35:44,684 INFO  [Log] escreveu o element na posição 7 
+2020-01-15 12:35:44,857 INFO  [Log] escreveu o element na posição 8 
+2020-01-15 12:35:45,028 INFO  [Log] escreveu o element na posição 9 
+2020-01-15 12:35:45,170 INFO  [Log] escreveu o element na posição 10 
+2020-01-15 12:35:45,298 INFO  [Log] escreveu o element na posição 11 
+2020-01-15 12:35:45,377 INFO  [Log] concordou com os termos 
+2020-01-15 12:35:45,422 INFO  [Log] clicou no btnRegister 
+2020-01-15 12:35:45,422 INFO  [Log] teste executado 
+2020-01-15 12:35:45,422 INFO  [Log] entrou no metodo de captura de senha 
+2020-01-15 12:35:45,441 INFO  [Log] entrou no metodo de captura de confirmação da senha 
+2020-01-15 12:35:45,465 INFO  [Log] teste passou 
+2020-01-15 12:35:45,799 INFO  [Log] print feito 
+2020-01-15 12:35:45,800 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 12:35:45,800 INFO  [Log] X 
+2020-01-15 12:35:45,800 INFO  [Log] X 
+2020-01-15 12:35:45,800 INFO  [Log] X 
+2020-01-15 12:35:45,800 INFO  [Log] X 
+2020-01-15 12:37:52,396 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:37:52,396 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:37:52,396 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteCadastroComFalha20200115123752     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 12:37:52,396 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:37:52,396 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:37:52,841 INFO  [Log] clicou no btnLogar 
+2020-01-15 12:37:53,421 INFO  [Log] clicou no btnCriarConta 
+2020-01-15 12:37:53,772 INFO  [Log] escreveu o element na posição 0 
+2020-01-15 12:37:54,027 INFO  [Log] escreveu o element na posição 1 
+2020-01-15 12:37:54,171 INFO  [Log] escreveu o element na posição 2 
+2020-01-15 12:37:54,292 INFO  [Log] escreveu o element na posição 3 
+2020-01-15 12:37:54,455 INFO  [Log] escreveu o element na posição 4 
+2020-01-15 12:37:54,590 INFO  [Log] escreveu o element na posição 5 
+2020-01-15 12:37:54,722 INFO  [Log] escreveu o element na posição 6 
+2020-01-15 12:37:54,823 INFO  [Log] escreveu o element na posição 7 
+2020-01-15 12:37:55,018 INFO  [Log] escreveu o element na posição 8 
+2020-01-15 12:37:55,320 INFO  [Log] escreveu o element na posição 9 
+2020-01-15 12:37:55,452 INFO  [Log] escreveu o element na posição 10 
+2020-01-15 12:37:55,586 INFO  [Log] escreveu o element na posição 11 
+2020-01-15 12:37:55,655 INFO  [Log] concordou com os termos 
+2020-01-15 12:37:55,733 INFO  [Log] clicou no btnRegister 
+2020-01-15 12:37:55,733 INFO  [Log] teste executado 
+2020-01-15 12:37:55,734 INFO  [Log] entrou no metodo de captura de senha 
+2020-01-15 12:37:55,756 INFO  [Log] entrou no metodo de captura de confirmação da senha 
+2020-01-15 12:37:55,781 INFO  [Log] teste passou 
+2020-01-15 12:37:56,092 INFO  [Log] print feito 
+2020-01-15 12:37:56,092 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 12:37:56,092 INFO  [Log] X 
+2020-01-15 12:37:56,092 INFO  [Log] X 
+2020-01-15 12:37:56,092 INFO  [Log] X 
+2020-01-15 12:37:56,092 INFO  [Log] X 
+2020-01-15 12:42:29,200 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:42:29,200 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:42:29,200 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteCadastroComFalha20200115124229     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 12:42:29,200 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:42:29,200 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:42:29,622 INFO  [Log] clicou no btnLogar 
+2020-01-15 12:42:30,194 INFO  [Log] clicou no btnCriarConta 
+2020-01-15 12:42:30,548 INFO  [Log] escreveu o element na posição 0 
+2020-01-15 12:42:30,952 INFO  [Log] escreveu o element na posição 1 
+2020-01-15 12:42:31,084 INFO  [Log] escreveu o element na posição 2 
+2020-01-15 12:42:31,249 INFO  [Log] escreveu o element na posição 3 
+2020-01-15 12:42:31,400 INFO  [Log] escreveu o element na posição 4 
+2020-01-15 12:42:31,517 INFO  [Log] escreveu o element na posição 5 
+2020-01-15 12:42:31,653 INFO  [Log] escreveu o element na posição 6 
+2020-01-15 12:42:31,762 INFO  [Log] escreveu o element na posição 7 
+2020-01-15 12:42:31,943 INFO  [Log] escreveu o element na posição 8 
+2020-01-15 12:42:32,109 INFO  [Log] escreveu o element na posição 9 
+2020-01-15 12:42:32,271 INFO  [Log] escreveu o element na posição 10 
+2020-01-15 12:42:32,410 INFO  [Log] escreveu o element na posição 11 
+2020-01-15 12:42:32,483 INFO  [Log] concordou com os termos 
+2020-01-15 12:42:32,530 INFO  [Log] clicou no btnRegister 
+2020-01-15 12:42:32,530 INFO  [Log] teste executado 
+2020-01-15 12:42:32,530 INFO  [Log] entrou no metodo de captura de senha 
+2020-01-15 12:42:32,551 INFO  [Log] entrou no metodo de captura de confirmação da senha 
+2020-01-15 12:42:32,577 INFO  [Log] teste passou 
+2020-01-15 12:42:32,900 INFO  [Log] print feito 
+2020-01-15 12:42:32,900 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 12:42:32,900 INFO  [Log] X 
+2020-01-15 12:42:32,900 INFO  [Log] X 
+2020-01-15 12:42:32,900 INFO  [Log] X 
+2020-01-15 12:42:32,900 INFO  [Log] X 
+2020-01-15 12:43:48,805 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:43:48,805 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:43:48,805 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteCadastroComFalha20200115124348     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 12:43:48,805 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:43:48,805 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:43:49,229 INFO  [Log] clicou no btnLogar 
+2020-01-15 12:43:49,811 INFO  [Log] clicou no btnCriarConta 
+2020-01-15 12:43:50,170 INFO  [Log] escreveu o element na posição 0 
+2020-01-15 12:43:50,451 INFO  [Log] escreveu o element na posição 1 
+2020-01-15 12:43:50,573 INFO  [Log] escreveu o element na posição 2 
+2020-01-15 12:43:50,700 INFO  [Log] escreveu o element na posição 3 
+2020-01-15 12:43:50,859 INFO  [Log] escreveu o element na posição 4 
+2020-01-15 12:43:51,106 INFO  [Log] escreveu o element na posição 5 
+2020-01-15 12:43:51,235 INFO  [Log] escreveu o element na posição 6 
+2020-01-15 12:43:51,334 INFO  [Log] escreveu o element na posição 7 
+2020-01-15 12:43:51,517 INFO  [Log] escreveu o element na posição 8 
+2020-01-15 12:43:51,694 INFO  [Log] escreveu o element na posição 9 
+2020-01-15 12:43:51,827 INFO  [Log] escreveu o element na posição 10 
+2020-01-15 12:43:51,961 INFO  [Log] escreveu o element na posição 11 
+2020-01-15 12:43:52,040 INFO  [Log] concordou com os termos 
+2020-01-15 12:43:52,087 INFO  [Log] clicou no btnRegister 
+2020-01-15 12:43:52,088 INFO  [Log] teste executado 
+2020-01-15 12:43:52,088 INFO  [Log] entrou no metodo de captura de senha 
+2020-01-15 12:43:52,109 INFO  [Log] entrou no metodo de captura de confirmação da senha 
+2020-01-15 12:43:52,134 INFO  [Log] teste passou 
+2020-01-15 12:43:52,442 INFO  [Log] print feito 
+2020-01-15 12:43:52,442 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 12:43:52,442 INFO  [Log] X 
+2020-01-15 12:43:52,442 INFO  [Log] X 
+2020-01-15 12:43:52,442 INFO  [Log] X 
+2020-01-15 12:43:52,442 INFO  [Log] X 
+2020-01-15 12:56:10,612 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:56:10,612 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:56:10,612 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteCadastroComFalha20200115125610     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 12:56:10,612 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:56:10,612 INFO  [Log] **************************************************************************************** 
+2020-01-15 12:56:11,036 INFO  [Log] clicou no btnLogar 
+2020-01-15 12:56:11,609 INFO  [Log] clicou no btnCriarConta 
+2020-01-15 12:56:11,965 INFO  [Log] escreveu o element na posição 0 
+2020-01-15 12:56:12,217 INFO  [Log] escreveu o element na posição 1 
+2020-01-15 12:56:12,348 INFO  [Log] escreveu o element na posição 2 
+2020-01-15 12:56:12,455 INFO  [Log] escreveu o element na posição 3 
+2020-01-15 12:56:12,603 INFO  [Log] escreveu o element na posição 4 
+2020-01-15 12:56:12,838 INFO  [Log] escreveu o element na posição 5 
+2020-01-15 12:56:12,960 INFO  [Log] escreveu o element na posição 6 
+2020-01-15 12:56:13,048 INFO  [Log] escreveu o element na posição 7 
+2020-01-15 12:56:13,218 INFO  [Log] escreveu o element na posição 8 
+2020-01-15 12:56:13,368 INFO  [Log] escreveu o element na posição 9 
+2020-01-15 12:56:13,494 INFO  [Log] escreveu o element na posição 10 
+2020-01-15 12:56:13,615 INFO  [Log] escreveu o element na posição 11 
+2020-01-15 12:56:13,682 INFO  [Log] concordou com os termos 
+2020-01-15 12:56:13,728 INFO  [Log] clicou no btnRegister 
+2020-01-15 12:56:13,728 INFO  [Log] teste executado 
+2020-01-15 12:56:13,728 INFO  [Log] entrou no metodo de captura de senha 
+2020-01-15 12:56:13,748 INFO  [Log] entrou no metodo de captura de confirmação da senha 
+2020-01-15 12:56:13,769 INFO  [Log] teste passou 
+2020-01-15 12:56:14,088 INFO  [Log] print feito 
+2020-01-15 12:56:14,088 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 12:56:14,088 INFO  [Log] X 
+2020-01-15 12:56:14,088 INFO  [Log] X 
+2020-01-15 12:56:14,088 INFO  [Log] X 
+2020-01-15 12:56:14,088 INFO  [Log] X 
+2020-01-15 15:17:57,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:17:57,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:17:57,509 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaHomeSucesso20200115031757     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 15:17:57,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:17:57,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:17:57,807 INFO  [Log] clicou no componete de speaker 
+2020-01-15 15:17:58,778 INFO  [Log] conseguiu clicar 
+2020-01-15 15:17:58,778 INFO  [Log] teste de pesquisa executado 
+2020-01-15 15:17:59,619 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 15:17:59,619 INFO  [Log] X 
+2020-01-15 15:17:59,619 INFO  [Log] X 
+2020-01-15 15:17:59,619 INFO  [Log] X 
+2020-01-15 15:17:59,619 INFO  [Log] X 
+2020-01-15 15:50:21,354 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:50:21,358 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:50:21,358 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115035021     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 15:50:21,358 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:50:21,358 INFO  [Log] **************************************************************************************** 
+2020-01-15 15:50:21,621 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 15:50:21,642 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 15:50:22,801 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 15:50:22,864 INFO  [Log] pesquisou 
+2020-01-15 15:50:23,720 INFO  [Log] conseguiu clicar 
+2020-01-15 15:50:23,720 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:00:24,068 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:00:24,068 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:00:24,068 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115040024     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:00:24,068 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:00:24,068 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:00:24,713 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 16:00:24,719 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 16:00:25,846 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 16:00:25,926 INFO  [Log] pesquisou 
+2020-01-15 16:00:27,978 INFO  [Log] conseguiu clicar 
+2020-01-15 16:00:27,978 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:01:00,078 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:01:00,078 INFO  [Log] X 
+2020-01-15 16:01:00,078 INFO  [Log] X 
+2020-01-15 16:01:00,078 INFO  [Log] X 
+2020-01-15 16:01:00,078 INFO  [Log] X 
+2020-01-15 16:01:42,143 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:01:42,143 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:01:42,143 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115040142     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:01:42,143 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:01:42,143 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:01:42,337 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 16:01:42,347 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 16:01:43,217 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 16:01:43,349 INFO  [Log] pesquisou 
+2020-01-15 16:01:44,727 INFO  [Log] conseguiu clicar 
+2020-01-15 16:01:44,727 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:02:17,208 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:02:17,209 INFO  [Log] X 
+2020-01-15 16:02:17,209 INFO  [Log] X 
+2020-01-15 16:02:17,209 INFO  [Log] X 
+2020-01-15 16:02:17,209 INFO  [Log] X 
+2020-01-15 16:02:47,054 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:02:47,054 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:02:47,054 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaHomeSucesso20200115040247     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:02:47,054 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:02:47,054 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:02:47,356 INFO  [Log] clicou no componete de speaker 
+2020-01-15 16:02:47,958 INFO  [Log] conseguiu clicar 
+2020-01-15 16:02:47,958 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:03:29,493 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:03:29,494 INFO  [Log] X 
+2020-01-15 16:03:29,494 INFO  [Log] X 
+2020-01-15 16:03:29,494 INFO  [Log] X 
+2020-01-15 16:03:29,494 INFO  [Log] X 
+2020-01-15 16:03:55,632 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:03:55,632 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:03:55,632 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaHomeSucesso20200115040355     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:03:55,632 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:03:55,632 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:03:55,925 INFO  [Log] clicou no componete de speaker 
+2020-01-15 16:03:56,665 INFO  [Log] conseguiu clicar 
+2020-01-15 16:03:56,665 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:04:32,968 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:04:32,968 INFO  [Log] X 
+2020-01-15 16:04:32,968 INFO  [Log] X 
+2020-01-15 16:04:32,968 INFO  [Log] X 
+2020-01-15 16:04:32,968 INFO  [Log] X 
+2020-01-15 16:05:42,560 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:05:42,560 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:05:42,560 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaHomeSucesso20200115040542     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:05:42,560 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:05:42,560 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:05:42,810 INFO  [Log] clicou no componete de speaker 
+2020-01-15 16:05:43,535 INFO  [Log] conseguiu clicar 
+2020-01-15 16:05:43,535 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:05:50,306 INFO  [Log] teste de pagamento executado 
+2020-01-15 16:05:50,326 INFO  [Log] teste passou 
+2020-01-15 16:05:50,857 INFO  [Log] print feito 
+2020-01-15 16:05:50,857 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:05:50,857 INFO  [Log] X 
+2020-01-15 16:05:50,857 INFO  [Log] X 
+2020-01-15 16:05:50,857 INFO  [Log] X 
+2020-01-15 16:05:50,858 INFO  [Log] X 
+2020-01-15 16:12:08,393 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:12:08,394 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:12:08,394 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115041208     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:12:08,394 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:12:08,394 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:12:08,688 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 16:12:08,699 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 16:12:09,553 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 16:12:09,837 INFO  [Log] pesquisou 
+2020-01-15 16:12:10,740 INFO  [Log] conseguiu clicar 
+2020-01-15 16:12:10,740 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:12:17,482 INFO  [Log] teste de pagamento executado 
+2020-01-15 16:12:17,498 INFO  [Log] teste passou 
+2020-01-15 16:12:18,160 INFO  [Log] Print feito 
+2020-01-15 16:12:18,162 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:12:18,162 INFO  [Log] X 
+2020-01-15 16:12:18,162 INFO  [Log] X 
+2020-01-15 16:12:18,162 INFO  [Log] X 
+2020-01-15 16:12:18,162 INFO  [Log] X 
+2020-01-15 16:13:41,427 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:13:41,427 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:13:41,427 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115041341     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:13:41,427 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:13:41,427 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:13:41,606 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 16:13:41,612 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 16:13:42,230 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 16:13:42,502 INFO  [Log] pesquisou 
+2020-01-15 16:13:43,889 INFO  [Log] conseguiu clicar 
+2020-01-15 16:13:43,889 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:13:50,764 INFO  [Log] teste de pagamento executado 
+2020-01-15 16:13:50,777 INFO  [Log] teste passou 
+2020-01-15 16:13:51,387 INFO  [Log] Print feito 
+2020-01-15 16:13:51,388 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:13:51,388 INFO  [Log] X 
+2020-01-15 16:13:51,388 INFO  [Log] X 
+2020-01-15 16:13:51,388 INFO  [Log] X 
+2020-01-15 16:13:51,388 INFO  [Log] X 
+2020-01-15 16:47:56,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:47:56,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:47:56,509 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115044756     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:47:56,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:47:56,509 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:47:56,932 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 16:47:56,935 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 16:47:57,214 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 16:47:57,239 INFO  [Log] pesquisou 
+2020-01-15 16:47:58,189 INFO  [Log] conseguiu clicar 
+2020-01-15 16:47:58,189 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:48:23,083 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:48:23,083 INFO  [Log] X 
+2020-01-15 16:48:23,083 INFO  [Log] X 
+2020-01-15 16:48:23,083 INFO  [Log] X 
+2020-01-15 16:48:23,083 INFO  [Log] X 
+2020-01-15 16:50:43,129 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:50:43,129 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:50:43,130 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115045043     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:50:43,130 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:50:43,130 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:50:43,531 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 16:50:43,535 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 16:50:43,829 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 16:50:43,858 INFO  [Log] pesquisou 
+2020-01-15 16:50:44,848 INFO  [Log] conseguiu clicar 
+2020-01-15 16:50:44,848 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:51:09,786 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:51:09,786 INFO  [Log] X 
+2020-01-15 16:51:09,786 INFO  [Log] X 
+2020-01-15 16:51:09,786 INFO  [Log] X 
+2020-01-15 16:51:09,786 INFO  [Log] X 
+2020-01-15 16:51:55,943 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:51:55,943 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:51:55,943 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$         SeleniumTesteBuscaSucesso20200115045155     $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-01-15 16:51:55,943 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:51:55,943 INFO  [Log] **************************************************************************************** 
+2020-01-15 16:51:56,339 INFO  [Log] clicou na lupa de pesquisa 
+2020-01-15 16:51:56,343 INFO  [Log] pegou o produto na massa de dados 
+2020-01-15 16:51:56,631 INFO  [Log] enviou o produto para a barra de pesquisa 
+2020-01-15 16:51:56,657 INFO  [Log] pesquisou 
+2020-01-15 16:51:57,694 INFO  [Log] conseguiu clicar 
+2020-01-15 16:51:57,694 INFO  [Log] teste de pesquisa executado 
+2020-01-15 16:52:03,218 INFO  [Log] teste de pagamento executado 
+2020-01-15 16:52:03,223 INFO  [Log] teste passou 
+2020-01-15 16:52:03,554 INFO  [Log] Print feito 
+2020-01-15 16:52:03,554 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-01-15 16:52:03,554 INFO  [Log] X 
+2020-01-15 16:52:03,554 INFO  [Log] X 
+2020-01-15 16:52:03,554 INFO  [Log] X 
+2020-01-15 16:52:03,554 INFO  [Log] X 

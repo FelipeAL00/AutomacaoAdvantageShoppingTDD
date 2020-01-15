@@ -27,7 +27,6 @@ public class SearchAction {
 		Log.info("enviou o produto para a barra de pesquisa");
 		SearchPage.barraPesquisa.sendKeys(Keys.ENTER);
 		Log.info("pesquisou");
-
 		clicarMassaDados(driver);
 		Log.info("conseguiu clicar");
 	}
