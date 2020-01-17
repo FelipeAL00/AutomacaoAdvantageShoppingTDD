@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class DriverFactory {
 	private static WebDriver driver;
 	
-	public static WebDriver InitDriver() {
+	public static WebDriver initDriver() {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -21,13 +21,19 @@ public class DriverFactory {
 	}
 
 	public static WebDriver getdriver() {
+		if(driver != null) {
+			return driver;
+		}
+		
+		initDriver();
 		return driver;
+		
 	}
 	
 	public static void closeDriver() {
 		if(driver != null) {
 			Log.endTestCase("SeleniumTesteCadastroComSucesso"+ Generator.dataHoraParaArquivo());
-			driver.close();
+			driver.quit();
 		}
 	}
 	

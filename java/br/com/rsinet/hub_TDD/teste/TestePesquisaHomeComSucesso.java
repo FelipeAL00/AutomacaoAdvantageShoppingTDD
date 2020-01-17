@@ -24,7 +24,7 @@ public class TestePesquisaHomeComSucesso {
 
 	@Before
 	public void inicio() throws Exception {
-		driver = DriverFactory.InitDriver();
+		driver = DriverFactory.initDriver();
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "buscarHomeSucesso");
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		searchPage = PageFactory.initElements(driver, SearchPage.class);

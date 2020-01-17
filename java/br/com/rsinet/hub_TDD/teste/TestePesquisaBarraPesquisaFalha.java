@@ -20,7 +20,7 @@ public class TestePesquisaBarraPesquisaFalha {
 	private SearchPage searchPage;
 	@Before
 	public void inicio() throws Exception {
-		driver = DriverFactory.InitDriver();
+		driver = DriverFactory.initDriver();
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraFalha");
 		searchPage = PageFactory.initElements(driver, SearchPage.class);
 	}

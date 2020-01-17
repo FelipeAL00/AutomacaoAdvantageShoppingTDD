@@ -22,7 +22,7 @@ public class TestePesquisaHomeComFalha {
 	private SearchPage searchPage;
 	@Before
 	public void inicio() throws Exception {
-		driver = DriverFactory.InitDriver();
+		driver = DriverFactory.initDriver();
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "buscarHomeFalha");
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		searchPage = PageFactory.initElements(driver, SearchPage.class);

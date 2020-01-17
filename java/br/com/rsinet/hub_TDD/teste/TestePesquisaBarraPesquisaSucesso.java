@@ -24,7 +24,7 @@ public class TestePesquisaBarraPesquisaSucesso {
 
 	@Before
 	public void inicio() throws Exception {
-		driver = DriverFactory.InitDriver();
+		driver = DriverFactory.initDriver();
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraSucesso");
 		searchPage = PageFactory.initElements(driver, SearchPage.class);
 		productPage = PageFactory.initElements(driver, ProductPage.class);
