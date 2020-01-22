@@ -36,7 +36,7 @@ public class TestePesquisaHomeComSucesso {
 		homePage.clicarComponentSpeakers();
 		Log.info("clicou no componete de speaker");
 
-		searchPage.clicarMassaDados(driver);
+		searchPage.clicarMassaDados(driver, ExcelUtil.getCellData(1, 0));
 		Log.info("conseguiu clicar");
 		
 		Log.info("teste de pesquisa executado");

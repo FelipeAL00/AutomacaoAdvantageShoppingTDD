@@ -15,7 +15,7 @@ public class HomePage {
 	@FindBy(how = How.ID, using = "menuUser")
 	private static WebElement btnLogar;
 
-	@FindBy(how = How.ID, using = "menuUserLink")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"menuUserLink\"]/span")
 	private static WebElement UserLog;
 
 	@FindBy(how = How.ID, using = "speakersImg")
@@ -23,7 +23,9 @@ public class HomePage {
 
 	@FindBy(how = How.XPATH, using = "/html/body/login-modal/div/div/div[3]/a[2]")
 	private static WebElement btnCriarConta;
-
+	
+	@FindBy(how = How.XPATH, using = "/html/body/div[3]/footer/div/h3")
+	private WebElement followUS;
 	public void clickBtnLogar() {
 		wait.until(ExpectedConditions.visibilityOf(btnLogar));
 		btnLogar.click();
@@ -39,9 +41,10 @@ public class HomePage {
 		componentSpeakers.click();
 	}
 
-	public String capturarQuemTaLogado() {
+	public String getUserLog() {
+		wait.until(ExpectedConditions.urlToBe("https://www.advantageonlineshopping.com/#/"));
 		if (UserLog.isEnabled()) {
-			wait.until(ExpectedConditions.urlToBe("https://www.advantageonlineshopping.com/#/"));
+			wait.until(ExpectedConditions.visibilityOf(UserLog));
 			return UserLog.getText();
 		}
 		return "Não está ativo";
@@ -49,10 +52,6 @@ public class HomePage {
 
 	public WebElement getBtnLogar() {
 		return btnLogar;
-	}
-
-	public WebElement getUserLog() {
-		return UserLog;
 	}
 
 	public WebElement getComponentSpeakers() {

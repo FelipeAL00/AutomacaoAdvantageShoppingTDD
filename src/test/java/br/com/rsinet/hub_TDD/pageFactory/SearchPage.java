@@ -11,28 +11,29 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_TDD.Util.DriverFactory;
-import br.com.rsinet.hub_TDD.Util.ExcelUtil;
+
+
 
 public class SearchPage {
 	
 	private WebDriverWait wait = new WebDriverWait(DriverFactory.getdriver(), 10);
 	
 	@FindBy(how = How.ID, using = "menuSearch")
-	public static WebElement lupaPesquisa;
+	private  WebElement lupaPesquisa;
 
 	@FindBy(how = How.ID, using = "autoComplete")
-	public static WebElement barraPesquisa;
+	private  WebElement barraPesquisa;
 
 	@FindBy(how = How.XPATH, using = "//*[@id=\"searchPage\"]/div[3]/div/label/span")
-	public static WebElement componentText;
+	private  WebElement componentText;
 
-	public static WebElement linkText(WebDriver driver) throws Exception {
-		return driver.findElement(By.linkText(ExcelUtil.getCellData(1, 0)));
+	public  WebElement linkText(WebDriver driver, String linkText) throws Exception {
+		return driver.findElement(By.linkText(linkText));
 	}
-	public void clicarMassaDados(WebDriver driver) throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(linkText(driver)));
+	public void clicarMassaDados(WebDriver driver, String linkText) throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(linkText(driver, linkText)));
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click();", linkText(driver));
+		executor.executeScript("arguments[0].click();", linkText(driver, linkText));
 	}
 	public String getComponentText() {
 		return componentText.getText();

@@ -1,6 +1,6 @@
 package br.com.rsinet.hub_TDD.teste;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
@@ -60,10 +60,9 @@ public class TesteCadastroComSucesso {
 		Log.info("clicou no btnRegister");
 		
 		Log.info("teste executado");
-
-		String resultadoObtido = homePage.capturarQuemTaLogado();
-
-		assertEquals(ExcelUtil.getCellData(1, 0), resultadoObtido);
+		
+		String userLog = homePage.getUserLog();
+		assertEquals(ExcelUtil.getCellData(1, 0), userLog);
 		Log.info("teste passou");
 
 		Printar.print(driver, "success");

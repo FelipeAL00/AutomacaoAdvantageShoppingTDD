@@ -38,7 +38,7 @@ public class TestePesquisaBarraPesquisaFalha {
 			Log.info("enviou o produto para a barra de pesquisa");
 			searchPage.barraPesquisa(Keys.ENTER);
 			Log.info("pesquisou");
-			searchPage.clicarMassaDados(driver);
+			searchPage.clicarMassaDados(driver, ExcelUtil.getCellData(1, 0));
 
 			
 			Log.info("teste executado");

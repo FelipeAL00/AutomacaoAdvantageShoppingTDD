@@ -4,12 +4,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_TDD.Util.DriverFactory;
 
 public class RegisterPage {
 	
+	private Select select;
 	private WebDriverWait wait = new WebDriverWait(DriverFactory.getdriver(), 10);
 	
 	@FindBy(how = How.NAME, using = "usernameRegisterPage")
@@ -53,6 +55,7 @@ public class RegisterPage {
 
 	@FindBy(how = How.ID, using = "register_btnundefined")
 	private WebElement btnRegister;
+
 
 	public WebElement getUsername() {
 		return username;
@@ -158,7 +161,8 @@ public class RegisterPage {
 
 	public void country(String country) {
 		wait.until(ExpectedConditions.visibilityOf(countrySelect));
-		countrySelect.sendKeys(country);		
+		select = new Select(countrySelect);
+		select.selectByVisibleText(country);		
 	}
 
 	public void address(String addressT) {
