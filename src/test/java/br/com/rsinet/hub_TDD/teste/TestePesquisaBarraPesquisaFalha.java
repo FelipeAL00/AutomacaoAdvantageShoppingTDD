@@ -2,6 +2,8 @@ package br.com.rsinet.hub_TDD.teste;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.IOException;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,24 +11,32 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import br.com.rsinet.hub_TDD.Util.DriverFactory;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.Util.Log;
-import br.com.rsinet.hub_TDD.Util.Printar;
+import br.com.rsinet.hub_TDD.Util.Report;
 import br.com.rsinet.hub_TDD.pageFactory.SearchPage;
 
 public class TestePesquisaBarraPesquisaFalha {
 	private WebDriver driver;
 	private SearchPage searchPage;
+	private ExtentTest test;
+	private ExtentReports extent;
 	@Before
 	public void inicio() throws Exception {
 		driver = DriverFactory.initDriver();
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraFalha");
 		searchPage = PageFactory.initElements(driver, SearchPage.class);
+		extent = Report.setReport();
 	}
 
 	@Test
 	public void deveBuscarUmProdutoInexistente() throws Exception {
+		test = Report.createTest("deveBuscarUmProdutoInexistente");
+		
 		try {
 			searchPage.lupaPesquisa();
 			Log.info("clicou na lupa de pesquisa");
@@ -47,12 +57,12 @@ public class TestePesquisaBarraPesquisaFalha {
 			assertEquals(esperado, searchPage.getComponentText());
 			Log.info("Teste passou");
 		}
-		Printar.print(driver, "buscaFail");
-		Log.info("Print tirado");
 	}
 
 	@After
-	public void finaliza() {
+	public void finaliza() throws IOException {
+		Report.statusReported(test, "TestePesquisaBarraComFalha_", driver);
+		Report.quitExtent(extent);
 		DriverFactory.closeDriver();
 	}
 }
