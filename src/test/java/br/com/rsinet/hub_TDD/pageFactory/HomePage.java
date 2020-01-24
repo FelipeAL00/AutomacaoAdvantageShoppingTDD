@@ -1,5 +1,6 @@
 package br.com.rsinet.hub_TDD.pageFactory;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -38,7 +39,8 @@ public class HomePage {
 
 	public void clicarComponentSpeakers() {
 		wait.until(ExpectedConditions.visibilityOf(componentSpeakers));
-		componentSpeakers.click();
+		JavascriptExecutor js =(JavascriptExecutor) DriverFactory.getdriver();
+		js.executeScript("arguments[0].click();", componentSpeakers);
 	}
 
 	public String getUserLog() {
