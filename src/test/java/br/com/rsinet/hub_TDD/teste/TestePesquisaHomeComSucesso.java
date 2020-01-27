@@ -13,10 +13,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
-import br.com.rsinet.hub_TDD.Util.DriverFactory;
+import br.com.rsinet.hub_TDD.manager.FileReaderManager;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.Util.Log;
 import br.com.rsinet.hub_TDD.Util.Report;
+import br.com.rsinet.hub_TDD.manager.WebDriverManager;
 import br.com.rsinet.hub_TDD.pageFactory.HomePage;
 import br.com.rsinet.hub_TDD.pageFactory.ProductPage;
 import br.com.rsinet.hub_TDD.pageFactory.SearchPage;
@@ -28,10 +29,13 @@ public class TestePesquisaHomeComSucesso {
 	private SearchPage searchPage;
 	private ExtentTest test;
 	private ExtentReports extent;
+	private WebDriverManager managerDriver;
 
 	@Before
 	public void inicio() throws Exception {
-		driver = DriverFactory.initDriver();
+		managerDriver = new WebDriverManager();
+		driver = managerDriver.getDriver();
+		driver.get(FileReaderManager.getInstance().getConfigReader().getUrl());
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "buscarHomeSucesso");
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		searchPage = PageFactory.initElements(driver, SearchPage.class);
@@ -46,7 +50,7 @@ public class TestePesquisaHomeComSucesso {
 		homePage.clicarComponentSpeakers();
 		Log.info("clicou no componete de speaker");
 
-		searchPage.clicarMassaDados(driver, ExcelUtil.getCellData(1, 0));
+		searchPage.clicarMassaDados(ExcelUtil.getCellData(1, 0));
 		Log.info("conseguiu clicar");
 		
 		Log.info("teste de pesquisa executado");
@@ -72,6 +76,6 @@ public class TestePesquisaHomeComSucesso {
 	public void finaliza() throws IOException {
 		Report.statusReported(test, "TestePesquisaComSucesso_", driver);
 		Report.quitExtent(extent);
-		DriverFactory.closeDriver();
+		managerDriver.closeDriver();
 	}
 }

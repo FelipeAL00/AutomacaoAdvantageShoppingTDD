@@ -14,10 +14,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
-import br.com.rsinet.hub_TDD.Util.DriverFactory;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.Util.Log;
 import br.com.rsinet.hub_TDD.Util.Report;
+import br.com.rsinet.hub_TDD.manager.FileReaderManager;
+import br.com.rsinet.hub_TDD.manager.WebDriverManager;
 import br.com.rsinet.hub_TDD.pageFactory.ProductPage;
 import br.com.rsinet.hub_TDD.pageFactory.SearchPage;
 
@@ -28,10 +29,13 @@ public class TestePesquisaBarraPesquisaSucesso {
 	private ProductPage productPage;
 	private ExtentTest test;
 	private ExtentReports extent;
+	private WebDriverManager managerDriver;
 
 	@Before
 	public void inicio() throws Exception {
-		driver = DriverFactory.initDriver();
+		managerDriver = new WebDriverManager();
+		driver = managerDriver.getDriver();
+		driver.get(FileReaderManager.getInstance().getConfigReader().getUrl());
 		ExcelUtil.setExcelFile("MassaDados.xlsx", "BuscaBarraSucesso");
 		searchPage = PageFactory.initElements(driver, SearchPage.class);
 		productPage = PageFactory.initElements(driver, ProductPage.class);
@@ -52,7 +56,7 @@ public class TestePesquisaBarraPesquisaSucesso {
 		Log.info("enviou o produto para a barra de pesquisa");
 		searchPage.barraPesquisa(Keys.ENTER);
 		Log.info("pesquisou");
-		searchPage.clicarMassaDados(driver, ExcelUtil.getCellData(1, 0));
+		searchPage.clicarMassaDados(ExcelUtil.getCellData(1, 0));
 
 		Log.info("teste de pesquisa executado");
 
@@ -78,6 +82,6 @@ public class TestePesquisaBarraPesquisaSucesso {
 	public void finaliza() throws IOException {
 		Report.statusReported(test, "TestePesquisaBarraComSucesso_", driver);
 		Report.quitExtent(extent);
-		DriverFactory.closeDriver();
+		managerDriver.closeDriver();
 	}
 }

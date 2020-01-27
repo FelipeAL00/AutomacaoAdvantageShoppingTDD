@@ -1,18 +1,26 @@
 package br.com.rsinet.hub_TDD.pageFactory;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import br.com.rsinet.hub_TDD.Util.DriverFactory;
 
 public class RegisterPage {
-	
+	private WebDriver driver;
+
+	public RegisterPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+		wait = new WebDriverWait(this.driver, 10);
+	}
+
+	private WebDriverWait wait;
 	private Select select;
-	private WebDriverWait wait = new WebDriverWait(DriverFactory.getdriver(), 10);
 	
 	@FindBy(how = How.NAME, using = "usernameRegisterPage")
 	private WebElement username;
@@ -55,7 +63,6 @@ public class RegisterPage {
 
 	@FindBy(how = How.ID, using = "register_btnundefined")
 	private WebElement btnRegister;
-
 
 	public WebElement getUsername() {
 		return username;
@@ -162,7 +169,7 @@ public class RegisterPage {
 	public void country(String country) {
 		wait.until(ExpectedConditions.visibilityOf(countrySelect));
 		select = new Select(countrySelect);
-		select.selectByVisibleText(country);		
+		select.selectByVisibleText(country);	
 	}
 
 	public void address(String addressT) {
