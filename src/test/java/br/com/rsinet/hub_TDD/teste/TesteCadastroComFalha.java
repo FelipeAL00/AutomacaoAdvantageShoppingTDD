@@ -18,6 +18,7 @@ import br.com.rsinet.hub_TDD.Util.DriverFactory;
 import br.com.rsinet.hub_TDD.Util.ExcelUtil;
 import br.com.rsinet.hub_TDD.Util.Log;
 import br.com.rsinet.hub_TDD.Util.Report;
+import br.com.rsinet.hub_TDD.Util.ScrollDownEUp;
 import br.com.rsinet.hub_TDD.pageFactory.HomePage;
 import br.com.rsinet.hub_TDD.pageFactory.RegisterPage;
 
@@ -28,6 +29,7 @@ public class TesteCadastroComFalha {
 	private JavascriptExecutor js;
 	private ExtentTest test;
 	private ExtentReports extent;
+	private ScrollDownEUp scrollDownEUp;
 	
 
 	@Before
@@ -38,6 +40,7 @@ public class TesteCadastroComFalha {
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		js = (JavascriptExecutor) driver;
 		extent = Report.setReport();
+		scrollDownEUp = new ScrollDownEUp(driver);
 	}
 
 	@Test
@@ -77,7 +80,7 @@ public class TesteCadastroComFalha {
 
 	@After
 	public void finaliza() throws IOException {
-		
+		scrollDownEUp.scrollUp();
 		Report.statusReported(test, "TesteCadastroComFalha_", driver);
 		Report.quitExtent(extent);
 		DriverFactory.closeDriver();
